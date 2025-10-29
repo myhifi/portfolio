@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Yehia — Full-Stack Developer (Portfolio)</title>
+  <meta name="description" content="Mohamed Yehia — Aspiring Full-Stack Developer. HTML • CSS • Tailwind • Bootstrap • JavaScript. Freelance-friendly portfolio." />
+
+  <!-- Tailwind Play CDN (fast for prototypes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Meta theme color -->
+  <meta name="theme-color" content="#0f172a" />
+</head>
+<body class="antialiased text-slate-700 bg-slate-50">
+  <header class="bg-white shadow-sm sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-full overflow-hidden border-2 border-slate-200">
+          <img src="assets/myPic.jpg" alt="Mohamed Yehia" class="h-full w-full object-cover"/>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold">Mohamed Yehia</h1>
+          <p class="text-xs text-slate-500">Aspiring Full-Stack Developer</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#projects" class="hover:text-sky-600">Projects</a>
+        <a href="#services" class="hover:text-sky-600">Services</a>
+        <a href="#skills" class="hover:text-sky-600">Skills</a>
+        <a href="#contact" class="text-white bg-sky-600 hover:bg-sky-700 px-3 py-2 rounded-md">Contact</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobileBtn" class="p-2 rounded-md bg-slate-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div id="mobileNav" class="md:hidden hidden border-t bg-white">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="#projects" class="px-2 py-2">Projects</a>
+        <a href="#services" class="px-2 py-2">Services</a>
+        <a href="#skills" class="px-2 py-2">Skills</a>
+        <a href="#contact" class="px-2 py-2 text-sky-600">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-5 py-12">
+    <!-- HERO -->
+    <section id="hero" class="grid md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Hi, I’m <span class="text-sky-600">Mohamed Yehia</span></h2>
+        <p class="mt-3 text-lg text-slate-600 max-w-prose">I build responsive, user-focused websites and small web apps using HTML, CSS, Tailwind, Bootstrap and JavaScript. I completed Harvard's CS50 and I’m training as a Full-Stack Developer — available for freelance web projects and short contracts.</p>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-sky-600 text-white px-4 py-2 rounded-md">Hire me — WhatsApp</a>
+          <a href="#projects" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-md">View projects</a>
+          <a href="assets/MyCV_EN.pdf" class="inline-flex items-center gap-2 text-sm text-slate-500">Download CV (PDF)</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <h4 class="text-sm text-slate-500">Top Skills</h4>
+            <p class="mt-2 text-sm font-medium">HTML • CSS • JavaScript • Tailwind • Bootstrap</p>
+          </div>
+
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <h4 class="text-sm text-slate-500">Education</h4>
+            <p class="mt-2 text-sm font-medium">CS50 — Harvard (Intro to CS)</p>
+          </div>
+
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <h4 class="text-sm text-slate-500">Freelance Focus</h4>
+            <p class="mt-2 text-sm font-medium">Landing pages • Responsive sites • Small CRUD apps</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-first md:order-last flex justify-center md:justify-end">
+        <div class="w-48 h-48 md:w-56 md:h-56 rounded-xl overflow-hidden shadow-lg border border-slate-100">
+          <img src="assets/myPic.jpg" alt="Mohamed Yehia" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="mt-16">
+      <h3 class="text-2xl font-semibold">Services I Offer</h3>
+      <p class="mt-2 text-slate-600 max-w-prose">As a freelance developer I focus on fast, practical deliverables that help small businesses and entrepreneurs go live quickly.</p>
+
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-white rounded-lg p-5 shadow-sm">
+          <h4 class="font-semibold">Responsive Landing Pages</h4>
+          <p class="mt-2 text-sm text-slate-500">Modern, accessible landing pages built with Tailwind or Bootstrap. Pixel-perfect and mobile-first.</p>
+        </article>
+
+        <article class="bg-white rounded-lg p-5 shadow-sm">
+          <h4 class="font-semibold">Small Web Apps</h4>
+          <p class="mt-2 text-sm text-slate-500">Simple CRUD apps using Flask/SQLite or static frontends with local storage or lightweight backends.</p>
+        </article>
+
+        <article class="bg-white rounded-lg p-5 shadow-sm">
+          <h4 class="font-semibold">Website Fixes & Performance</h4>
+          <p class="mt-2 text-sm text-slate-500">Bug fixes, responsive adjustments, and small performance improvements for existing sites.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mt-16">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-semibold">Selected Projects (Case Studies)</h3>
+        <p class="text-sm text-slate-500">3 projects — static & deploy-ready</p>
+      </div>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <article class="bg-white rounded-lg overflow-hidden shadow-sm">
+          <a href="assets/preview-Clipboard-landing-page-From-frontendmentor-io.png" target="_blank">
+            <img src="assets/preview-Clipboard-landing-page-From-frontendmentor-io.png" alt="Clipboard preview" class="w-full h-44 object-cover bg-slate-100" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold">Clipboard — Landing Page</h4>
+            <p class="mt-1 text-sm text-slate-500">A responsive landing page built from a Frontend Mentor design using HTML, CSS and Bootstrap/Tailwind adjustments.</p>
+            <ul class="mt-3 text-xs text-slate-500 space-y-1">
+              <li><strong>Tech:</strong> HTML • CSS • Bootstrap</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a href="https://myhifi.github.io/Clipboard-landing-page-From-frontendmentor.io/" class="text-sky-600 text-sm">Live demo</a>
+              <a href="https://github.com/myhifi/Clipboard-landing-page-From-frontendmentor.io" class="text-slate-500 text-sm">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="bg-white rounded-lg overflow-hidden shadow-sm">
+          <a href="assets/preview-Bootstrap-5-Crash-Course-Website-Build-Deploy.png" target="_blank">
+            <img src="assets/preview-Bootstrap-5-Crash-Course-Website-Build-Deploy.png" alt="Bootstrap course preview" class="w-full h-44 object-cover bg-slate-100" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold">Bootstrap Crash Course — Demo Site</h4>
+            <p class="mt-1 text-sm text-slate-500">A multi-page demo site that practices layout, components and deployment using Bootstrap 5 and GitHub Pages.</p>
+            <ul class="mt-3 text-xs text-slate-500 space-y-1">
+              <li><strong>Tech:</strong> HTML • Bootstrap 5</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a href="https://myhifi.github.io/Bootstrap-5-Crash-Course-_-Website-Build-Deploy/" class="text-sky-600 text-sm">Live demo</a>
+              <a href="https://github.com/myhifi/Bootstrap-5-Crash-Course-_-Website-Build-Deploy" class="text-slate-500 text-sm">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="bg-white rounded-lg overflow-hidden shadow-sm">
+          <a href="assets/preview-Social-Links-Profile.png" target="_blank">
+            <img src="assets/preview-Social-Links-Profile.png" alt="Social links preview" class="w-full h-44 object-cover bg-slate-100" />
+          </a>
+          <div class="p-4">
+            <h4 class="font-semibold">Social Links Profile</h4>
+            <p class="mt-1 text-sm text-slate-500">A simple personal links/profile page — useful as a starter portfolio piece and link hub for clients.</p>
+            <ul class="mt-3 text-xs text-slate-500 space-y-1">
+              <li><strong>Tech:</strong> HTML • CSS • JavaScript</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a href="https://myhifi.github.io/social-links-profile/" class="text-sky-600 text-sm">Live demo</a>
+              <a href="https://github.com/myhifi/social-links-profile" class="text-slate-500 text-sm">Repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-6 text-sm text-slate-500">Want more case studies or a deep-dive on a specific project? I can convert any of these into a detailed case study with screenshots, challenges and your role explained.</div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mt-16">
+      <h3 class="text-2xl font-semibold">Skills & Tools</h3>
+      <div class="mt-4 grid sm:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <h4 class="font-medium">Frontend</h4>
+          <p class="mt-2 text-sm text-slate-500">HTML, CSS, Tailwind CSS, Bootstrap, JavaScript</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <h4 class="font-medium">Backend & Data</h4>
+          <p class="mt-2 text-sm text-slate-500">Flask, Python, SQLite / SQL basics (CS50)</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <h4 class="font-medium">Other</h4>
+          <p class="mt-2 text-sm text-slate-500">Git & GitHub, Deployment (GitHub Pages, Netlify), Problem solving (CS50)</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <h4 class="font-medium">Currently learning</h4>
+          <p class="mt-2 text-sm text-slate-500">React & Next.js (review and build projects next)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section id="experience" class="mt-16">
+      <h3 class="text-2xl font-semibold">Education & Certificates</h3>
+      <div class="mt-4 grid gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <h4 class="font-medium">CS50: Introduction to Computer Science — Harvard (online)</h4>
+          <p class="mt-1 text-sm text-slate-500">Key topics: C, Algorithms, Data Structures, Python, SQL, HTML/CSS/JS, Flask.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <h4 class="font-medium">Full Stack Development — (MTech)</h4>
+          <p class="mt-1 text-sm text-slate-500">Practical web development training focused on full-stack fundamentals and deployment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-16 mb-20">
+      <h3 class="text-2xl font-semibold">Contact</h3>
+      <p class="mt-2 text-slate-600">For freelance work, quick fixes or consultations — WhatsApp is the fastest way to reach me.</p>
+
+      <div class="mt-4 sm:flex sm:items-center sm:gap-6">
+        <a href="https://wa.me/201004004795" class="inline-flex items-center gap-3 bg-green-600 text-white px-4 py-2 rounded-md">Message me on WhatsApp</a>
+
+        <div class="mt-4 sm:mt-0 text-sm text-slate-500">
+          <div><strong>Email:</strong> myhi@hotmail.com</div>
+          <div class="mt-1"><strong>CV:</strong> <a href="assets/MyCV_EN.pdf" class="text-sky-600">Download PDF</a></div>
+        </div>
+      </div>
+
+      <form class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input type="text" placeholder="Your name" class="p-3 rounded-md border border-slate-200" />
+        <input type="email" placeholder="Your email" class="p-3 rounded-md border border-slate-200" />
+        <textarea placeholder="Message" class="p-3 rounded-md border border-slate-200 sm:col-span-2"></textarea>
+        <div class="sm:col-span-2 flex gap-3">
+          <button type="submit" class="bg-sky-600 text-white px-4 py-2 rounded-md">Send message</button>
+          <a href="https://github.com/myhifi" class="text-slate-500 px-4 py-2 rounded-md border">View GitHub profile</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t py-6">
+    <div class="max-w-6xl mx-auto px-5 text-sm text-slate-500 flex items-center justify-between">
+      <div>© <span id="year"></span> Mohamed Yehia — Freelance Full-Stack Developer</div>
+      <div class="flex gap-3">
+        <a href="https://github.com/myhifi" class="hover:text-sky-600">GitHub</a>
+        <a href="#projects" class="hover:text-sky-600">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu
+    const btn = document.getElementById('mobileBtn');
+    const nav = document.getElementById('mobileNav');
+    btn && btn.addEventListener('click', ()=> nav.classList.toggle('hidden'));
+
+    // Basic contact form handler (non-production)
+    document.querySelector('form')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thanks — this form is a demo. For real projects I usually link forms to email or webhook services (Formspree, Netlify Forms, Zapier).');
+    });
+  </script>
+</body>
+</html>
