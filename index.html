@@ -3,18 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mohamed Yehia — Full-Stack Developer (Portfolio)</title>
-  <meta name="description" content="Mohamed Yehia — Aspiring Full-Stack Developer. HTML • CSS • Tailwind • Bootstrap • JavaScript. Freelance-friendly portfolio." />
+  <title>Mohamed Yehia — Full-Stack Developer | Freelance Web Developer</title>
+  <meta name="description" content="Mohamed Yehia — Full-Stack Web Developer specializing in Next.js, React, TypeScript, Node.js, Prisma & PostgreSQL. Harvard CS50x. Available for freelance projects." />
 
-  <!-- Tailwind Play CDN (fast for prototypes) -->
+  <!-- ===== SEO & SOCIAL TAGS ===== -->
+  <meta property="og:title" content="Mohamed Yehia — Full-Stack Developer Portfolio" />
+  <meta property="og:description" content="Freelance Full-Stack Developer building production-ready web apps with Next.js, React, TypeScript, Node.js, Prisma and PostgreSQL." />
+  <meta property="og:image" content="https://myhifi.github.io/portfolio/assets/og-image.png" />
+  <meta property="og:url" content="https://myhifi.github.io/portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mohamed Yehia — Portfolio" />
+  <link rel="canonical" href="https://myhifi.github.io/portfolio/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohamed Yehia — Full-Stack Developer" />
+  <meta name="twitter:description" content="Freelance Full-Stack Developer — Next.js, React, TypeScript, Node.js, Prisma, PostgreSQL." />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamed Yehia",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://myhifi.github.io/portfolio/",
+    "email": "myhi@hotmail.com",
+    "sameAs": [
+      "https://github.com/myhifi",
+      "https://www.linkedin.com/in/me-y-b91912245/"
+    ]
+  }
+  </script>
+
+  <!-- Tailwind Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Meta theme color -->
   <meta name="theme-color" content="#0f172a" />
 
   <style>
-    html {
-      scroll-behavior: smooth;
+    html { scroll-behavior: smooth; }
+    /* Subtle animated gradient for featured placeholders */
+    .featured-visual { position: relative; overflow: hidden; }
+    .featured-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.18), transparent 55%),
+                  radial-gradient(circle at 80% 80%, rgba(255,255,255,0.10), transparent 50%);
+      pointer-events: none;
     }
   </style>
 </head>
@@ -23,11 +59,11 @@
     <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
       <a href="#hero" class="flex items-center gap-3">
         <div class="h-10 w-10 rounded-full overflow-hidden border-2 border-slate-200">
-          <img src="assets/myPic.jpg" alt="Mohamed Yehia" class="h-full w-full object-cover"/>
+          <img src="assets/myPic.jpg" alt="Mohamed Yehia" class="h-full w-full object-cover" width="40" height="40" />
         </div>
         <div>
           <h1 class="text-lg font-semibold">Mohamed Yehia</h1>
-          <p class="text-xs text-slate-500">Aspiring Full-Stack Developer</p>
+          <p class="text-xs text-slate-500">Full-Stack Developer</p>
         </div>
       </a>
 
@@ -38,9 +74,8 @@
         <a href="#contact" class="text-white bg-sky-600 hover:bg-sky-700 px-3 py-2 rounded-md">Contact</a>
       </nav>
 
-      <!-- Mobile menu button -->
       <div class="md:hidden">
-        <button id="mobileBtn" class="p-2 rounded-md bg-slate-100">
+        <button id="mobileBtn" class="p-2 rounded-md bg-slate-100" aria-label="Toggle navigation">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -48,7 +83,6 @@
       </div>
     </div>
 
-    <!-- Mobile menu panel -->
     <div id="mobileNav" class="md:hidden hidden border-t bg-white">
       <div class="px-4 py-3 flex flex-col gap-2">
         <a href="#projects" class="px-2 py-2">Projects</a>
@@ -60,262 +94,312 @@
   </header>
 
   <main class="max-w-6xl mx-auto px-5 py-12">
-    <!-- HERO -->
+    <!-- ================= HERO ================= -->
     <section id="hero" class="grid md:grid-cols-3 gap-8 items-center">
       <div class="md:col-span-2">
+        <span class="inline-block px-3 py-1 bg-sky-50 border border-sky-100 rounded-full text-xs font-semibold text-sky-700 mb-4">
+          Available for Freelance & Full-Stack Contracts
+        </span>
         <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Hi, I’m <span class="text-sky-600">Mohamed Yehia</span></h2>
-        <p class="mt-3 text-lg text-slate-600 max-w-prose">I build responsive, user-focused websites and small web apps using HTML, CSS, Tailwind, Bootstrap and JavaScript. I completed Harvard's CS50 and I’m training as a Full-Stack Developer — available for freelance web projects and short contracts.</p>
+        <p class="mt-3 text-lg text-slate-600 max-w-prose">
+          Full-Stack Web Developer building high-performance, production-ready web applications with
+          <strong class="text-slate-800">Next.js, React, TypeScript, Node.js, Prisma, and PostgreSQL</strong>.
+          Harvard CS50x graduate — available for freelance projects and short contracts.
+        </p>
 
-        <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <a href="#contact" class="inline-flex items-center gap-2 bg-sky-600 text-white px-4 py-2 rounded-md">Hire me — WhatsApp</a>
-          <a href="https://codecrafted-vision.lovable.app/#hire" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-sky-600 text-sky-600 px-4 py-2 rounded-md hover:bg-sky-50 transition-colors">Hire me — Freelance Platforms</a>
-          <a href="https://www.linkedin.com/in/me-y-b91912245/?locale=en" target="_blank" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-md hover:bg-slate-50 transition-colors">LinkedIn</a>
-          <a href="#projects" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-md hover:border-sky-600 hover:text-sky-600 transition-colors">
-            View projects 
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
-          <a href="assets/MyCV_EN.pdf" class="inline-flex items-center gap-2 text-sm text-slate-500">Download CV (PDF)</a>
-          <a href="assets/Mohamed_Yehia_Freelance_Developer_Resume_v2.pdf" class="inline-flex items-center gap-2 text-sm text-slate-500">Download Resume (PDF)</a>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 flex-wrap">
+          <a href="https://wa.me/201004004795" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors">💬 WhatsApp</a>
+          <a href="https://codecrafted-vision.lovable.app/#hire" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-sky-600 text-sky-600 px-4 py-2 rounded-md hover:bg-sky-50 transition-colors">Freelance Platforms</a>
+          <a href="https://www.linkedin.com/in/me-y-b91912245/?locale=en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-md hover:bg-slate-50 transition-colors">LinkedIn</a>
+          <a href="#projects" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-md hover:border-sky-600 hover:text-sky-600 transition-colors">View projects ↓</a>
+          <a href="assets/MyCV_EN.pdf" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-sky-600 transition-colors">📄 CV</a>
+          <a href="assets/Mohamed_Yehia_Freelance_Developer_Resume_v2.pdf" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-sky-600 transition-colors">📄 Resume</a>
         </div>
 
         <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div class="p-4 bg-white rounded-lg shadow-sm">
-            <h4 class="text-sm text-slate-500">Top Skills</h4>
-            <p class="mt-2 text-sm font-medium">HTML • CSS • JavaScript • Tailwind • Bootstrap</p>
+            <h4 class="text-sm text-slate-500">Core Stack</h4>
+            <p class="mt-2 text-sm font-medium">Next.js • React • TypeScript • Node.js</p>
           </div>
-
           <div class="p-4 bg-white rounded-lg shadow-sm">
             <h4 class="text-sm text-slate-500">Education</h4>
             <p class="mt-2 text-sm font-medium">
-              <a href="https://certificates.cs50.io/5b8db48c-6b44-4818-8585-7ef55688f133.pdf?size=letter" target="_blank" class="text-sky-600 hover:underline">
-                CS50 — Harvard (Intro to CS)
-              </a>
+              <a href="https://certificates.cs50.io/5b8db48c-6b44-4818-8585-7ef55688f133.pdf?size=letter" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">CS50 — Harvard</a>
             </p>
           </div>
-
           <div class="p-4 bg-white rounded-lg shadow-sm">
-            <h4 class="text-sm text-slate-500">Freelance Focus</h4>
-            <p class="mt-2 text-sm font-medium">Landing pages • Responsive sites • CRUD apps</p>
+            <h4 class="text-sm text-slate-500">Focus</h4>
+            <p class="mt-2 text-sm font-medium">Full-Stack • Freelance</p>
           </div>
         </div>
       </div>
 
       <div class="order-first md:order-last flex justify-center md:justify-end">
         <div class="w-48 h-48 md:w-56 md:h-56 rounded-xl overflow-hidden shadow-lg border border-slate-100">
-          <img src="assets/myPic.jpg" alt="Mohamed Yehia" class="w-full h-full object-cover" />
+          <img src="assets/myPic.jpg" alt="Mohamed Yehia" class="w-full h-full object-cover" width="224" height="224" />
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- ================= SERVICES ================= -->
     <section id="services" class="mt-16">
       <h3 class="text-2xl font-semibold">Services I Offer</h3>
-      <p class="mt-2 text-slate-600 max-w-prose">As a freelance developer I focus on fast, practical deliverables that help small businesses and entrepreneurs go live quickly.</p>
+      <p class="mt-2 text-slate-600 max-w-prose">Fast, practical deliverables that help small businesses and entrepreneurs ship quickly and confidently.</p>
 
-      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <article class="bg-white rounded-lg p-5 shadow-sm">
-          <h4 class="font-semibold">Responsive Landing Pages</h4>
-          <p class="mt-2 text-sm text-slate-500">Modern, accessible landing pages built with Tailwind or Bootstrap. Pixel-perfect and mobile-first.</p>
+          <h4 class="font-semibold">🌐 Full-Stack Web Apps</h4>
+          <p class="mt-2 text-sm text-slate-500">Next.js, React, Node.js, Prisma, PostgreSQL & MongoDB — from schema to deployment.</p>
         </article>
-
         <article class="bg-white rounded-lg p-5 shadow-sm">
-          <h4 class="font-semibold">Web Apps</h4>
-          <p class="mt-2 text-sm text-slate-500">Simple CRUD apps using Flask/SQLite or static frontends with local storage or lightweight backends.</p>
+          <h4 class="font-semibold">📱 Responsive Landing Pages</h4>
+          <p class="mt-2 text-sm text-slate-500">Pixel-perfect, mobile-first designs built with Tailwind or Bootstrap.</p>
         </article>
-
         <article class="bg-white rounded-lg p-5 shadow-sm">
-          <h4 class="font-semibold">Data Automation & Dashboards</h4>
-          <p class="mt-2 text-sm text-slate-500">Automating complex data cleaning and analysis using <strong>Power Query</strong>. I transform messy datasets into clean, actionable Excel reports or web-ready data.</p>
+          <h4 class="font-semibold">📊 Data Automation & Dashboards</h4>
+          <p class="mt-2 text-sm text-slate-500">Automating complex data cleaning with <strong>Power Query</strong> — turning messy datasets into clean, actionable Excel reports.</p>
         </article>
-        
         <article class="bg-white rounded-lg p-5 shadow-sm">
-          <h4 class="font-semibold">Website Fixes & Performance</h4>
-          <p class="mt-2 text-sm text-slate-500">Bug fixes, responsive adjustments, and small performance improvements for existing sites.</p>
+          <h4 class="font-semibold">⚡ Fixes & Performance</h4>
+          <p class="mt-2 text-sm text-slate-500">Bug fixes, speed optimization, responsive adjustments, and deployment support.</p>
         </article>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ================= FEATURED PROJECTS ================= -->
     <section id="projects" class="mt-16">
-      <div class="flex items-center justify-between">
-        <h3 class="text-2xl font-semibold">Selected Projects (Case Studies)</h3>
-        <p class="text-sm text-slate-500">3 projects — static & deploy-ready</p>
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <h3 class="text-2xl font-semibold">⭐ Featured Projects</h3>
+        <p class="text-sm text-slate-500">4 production-grade case studies</p>
       </div>
 
-      <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
 
-        <!-- Project 1 -->
-        <article class="bg-white rounded-lg overflow-hidden shadow-sm">
-          <a href="assets/preview-Clipboard-landing-page-From-frontendmentor-io.png" target="_blank" rel="noopener noreferrer">
+        <!-- Featured 1: Lumière -->
+        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col hover:shadow-md transition-shadow">
+          <!-- Clicking the image goes to the Live Demo -->
+          <a href="https://lumiere-nextjs-fullstack.vercel.app/" target="_blank" rel="noopener noreferrer" class="block">
             <div class="relative overflow-hidden h-44 bg-slate-100 group">
               <img
-                src="assets/preview-Clipboard-landing-page-From-frontendmentor-io.png"
-                alt="Clipboard preview"
+                src="assets/lumiere-preview.png"
+                alt="Lumière Restaurant Homepage"
                 class="absolute top-0 left-0 w-full object-cover transition-transform duration-[4000ms] ease-in-out sm:group-hover:-translate-y-[calc(100%-11rem)]"
+                loading="lazy"
+                width="600"
+                height="176"
               />
             </div>
           </a>
-          <div class="p-4">
-            <h4 class="font-semibold">Clipboard — Landing Page</h4>
-            <p class="mt-1 text-sm text-slate-500">A responsive landing page built from a Frontend Mentor design using HTML, CSS and Bootstrap/Tailwind adjustments.</p>
-            <ul class="mt-3 text-xs text-slate-500 space-y-1">
-              <li><strong>Tech:</strong> HTML • CSS • Bootstrap</li>
-            </ul>
-            <div class="mt-4 flex gap-3">
-              <a href="https://myhifi.github.io/Clipboard-landing-page-From-frontendmentor.io/" class="text-sky-600 text-sm">Live demo</a>
-              <a href="https://github.com/myhifi/Clipboard-landing-page-From-frontendmentor-io" class="text-slate-500 text-sm">Repo</a>
+          <div class="p-5 flex-1 flex flex-col">
+            <span class="text-xs font-semibold uppercase tracking-wider text-amber-600">Full-Stack Restaurant System</span>
+            <h4 class="mt-1 font-bold text-slate-900 text-lg">Lumière — Restaurant Platform</h4>
+            <p class="mt-2 text-sm text-slate-500 flex-1">
+              Full-stack restaurant app featuring a smart real-time table reservation engine, dynamic menu management, and a full admin dashboard.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Next.js 16</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">TypeScript</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Prisma</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">PostgreSQL</span>
+            </div>
+            <!-- Updated Links: Live Demo, Video, Repo -->
+            <div class="mt-4 flex flex-wrap gap-4 border-t border-slate-100 pt-3 text-sm font-medium">
+              <a href="https://lumiere-nextjs-fullstack.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">Live Demo</a>
+              <a href="https://youtu.be/9meiFDONOwY" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:underline">▶ Video Demo</a>
+              <a href="https://github.com/myhifi/lumiere-nextjs-fullstack" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:underline">Repo</a>
             </div>
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="bg-white rounded-lg overflow-hidden shadow-sm">
-          <a href="assets/preview-Bootstrap-5-Crash-Course-Website-Build-Deploy.png" target="_blank" rel="noopener noreferrer">
-            <div class="relative overflow-hidden h-44 bg-slate-100 group">
-              <img
-                src="assets/preview-Bootstrap-5-Crash-Course-Website-Build-Deploy.png"
-                alt="Bootstrap course preview"
-                class="absolute top-0 left-0 w-full object-cover transition-transform duration-[4000ms] ease-in-out sm:group-hover:-translate-y-[calc(100%-11rem)]"
-              />
+        <!-- Featured 2: Novus / E-Shop -->
+        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col hover:shadow-md transition-shadow">
+          <div class="featured-visual h-44 bg-gradient-to-br from-zinc-900 via-zinc-800 to-slate-700 flex items-center justify-center">
+            <div class="text-center relative z-10">
+              <div class="text-5xl">🛍️</div>
+              <p class="mt-2 text-white/90 text-xs font-semibold tracking-[0.2em] uppercase">Novus</p>
             </div>
-          </a>
-          <div class="p-4">
-            <h4 class="font-semibold">Bootstrap Crash Course — Demo Site</h4>
-            <p class="mt-1 text-sm text-slate-500">A multi-page demo site that practices layout, components and deployment using Bootstrap 5 and GitHub Pages.</p>
-            <ul class="mt-3 text-xs text-slate-500 space-y-1">
-              <li><strong>Tech:</strong> HTML • Bootstrap 5</li>
-            </ul>
-            <div class="mt-4 flex gap-3">
-              <a href="https://myhifi.github.io/Bootstrap-5-Crash-Course-_-Website-Build-Deploy/" class="text-sky-600 text-sm">Live demo</a>
-              <a href="https://github.com/myhifi/Bootstrap-5-Crash-Course-_-Website-Build-Deploy" class="text-slate-500 text-sm">Repo</a>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-600">E-Commerce Platform</span>
+            <h4 class="mt-1 font-bold text-slate-900 text-lg">Novus — Premium Storefront</h4>
+            <p class="mt-2 text-sm text-slate-500 flex-1">
+              Production-ready online storefront with modular architecture, optimized server components, custom catalog pipeline, and robust database workflow.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Next.js 16</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">TypeScript</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Tailwind CSS</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Prisma 6</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">PostgreSQL</span>
+            </div>
+            <div class="mt-4 flex gap-4 border-t border-slate-100 pt-3">
+              <a href="https://github.com/myhifi/e-shop" target="_blank" rel="noopener noreferrer" class="text-sky-600 text-sm font-medium hover:underline">GitHub Repository →</a>
             </div>
           </div>
         </article>
 
-        <!-- Project 3 -->
-        <article class="bg-white rounded-lg overflow-hidden shadow-sm border border-slate-100 flex flex-col">
-          <a href="https://my-blog-system-five.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <!-- Featured 3: MERN Blog -->
+        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col hover:shadow-md transition-shadow">
+          <a href="https://my-blog-system-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="block">
             <div class="relative overflow-hidden h-44 bg-slate-900 group">
               <img
-                src="assets/mern-blog-preview.png" 
+                src="assets/mern-blog-preview.png"
                 alt="MERN Blog System Preview"
                 class="absolute top-0 left-0 w-full object-cover transition-transform duration-[4000ms] ease-in-out sm:group-hover:-translate-y-[calc(100%-11rem)]"
+                loading="lazy"
+                width="600"
+                height="176"
               />
               <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
             </div>
           </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h4 class="font-semibold text-slate-900">Full-Stack MERN Blog System</h4>
-            <p class="mt-1 text-sm text-slate-500 flex-1">
-              A comprehensive content management system featuring user authentication, dynamic posting, and a sleek Dark Mode toggle.
+          <div class="p-5 flex-1 flex flex-col">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sky-600">MERN Stack</span>
+            <h4 class="mt-1 font-bold text-slate-900 text-lg">Full-Stack MERN Blog System</h4>
+            <p class="mt-2 text-sm text-slate-500 flex-1">
+              Complete content management system with secure authentication, full CRUD operations, dynamic article publishing, and a responsive dark-mode UI.
             </p>
-            <ul class="mt-3 text-xs text-slate-500 space-y-1">
-              <li><strong>Tech:</strong> MongoDB • Express • React • Node.js</li>
-            </ul>
-            <div class="mt-4 flex gap-3">
-              <a href="https://my-blog-system-five.vercel.app/" target="_blank" class="text-sky-600 text-sm font-medium hover:underline">Live Demo</a>
-              <a href="https://github.com/myhifi/my-blog-system" target="_blank" class="text-slate-500 text-sm hover:underline">Repo</a>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">MongoDB</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Express.js</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">React</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Node.js</span>
             </div>
-          </div>
-        </article>
-
-        <!-- Project 4 -->
-        <article class="bg-white rounded-lg overflow-hidden shadow-sm">
-          <a href="assets/preview-Social-Links-Profile.png" target="_blank" rel="noopener noreferrer">
-            <div class="relative overflow-hidden h-44 bg-slate-100 group">
-              <img
-                src="assets/preview-Social-Links-Profile.png"
-                alt="Social links preview"
-                class="absolute top-0 left-0 w-full object-cover transition-transform duration-[4000ms] ease-in-out sm:group-hover:-translate-y-[calc(100%-11rem)]"
-              />
-            </div>
-          </a>
-          <div class="p-4">
-            <h4 class="font-semibold">Social Links Profile</h4>
-            <p class="mt-1 text-sm text-slate-500">A simple personal links/profile page — useful as a starter portfolio piece and link hub for clients.</p>
-            <ul class="mt-3 text-xs text-slate-500 space-y-1">
-              <li><strong>Tech:</strong> HTML • CSS • JavaScript</li>
-            </ul>
-            <div class="mt-4 flex gap-3">
-              <a href="https://myhifi.github.io/social-links-profile/" class="text-sky-600 text-sm">Live demo</a>
-              <a href="https://github.com/myhifi/social-links-profile" class="text-slate-500 text-sm">Repo</a>
+            <div class="mt-4 flex gap-4 border-t border-slate-100 pt-3">
+              <a href="https://my-blog-system-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-sky-600 text-sm font-medium hover:underline">Live Demo</a>
+              <a href="https://github.com/myhifi/my-blog-system" target="_blank" rel="noopener noreferrer" class="text-slate-500 text-sm hover:underline">Repo</a>
             </div>
           </div>
         </article>
 
       </div>
-
-      <div class="mt-6 text-sm text-slate-500">Want more case studies or a deep-dive on a specific project? I can convert any of these into a detailed case study with screenshots, challenges and your role explained.</div>
     </section>
-    
-    <!-- SKILLS -->
+
+    <!-- ================= OTHER PROJECTS ================= -->
+    <section id="other-projects" class="mt-16">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <h3 class="text-2xl font-semibold">Other Projects</h3>
+        <p class="text-sm text-slate-500">Supporting apps, specialized tools & backend samples</p>
+      </div>
+
+      <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Other 1: Bling -->
+        <article class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-pink-600">Landing Page</span>
+            <h4 class="font-semibold text-base mt-1">💎 Bling — Luxury Brand Landing</h4>
+            <p class="text-sm text-slate-600 mt-2">Premium, ultra-fast, SEO-optimized landing page for a luxury accessories brand built with Vanilla JS and Tailwind CSS.</p>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Vanilla JS</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Tailwind</span>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex gap-4">
+            <a href="https://myhifi.github.io/bling-landing-page/" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-sky-600 hover:underline">Live Demo →</a>
+            <a href="https://github.com/myhifi/bling-landing-page" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slate-500 hover:underline">Repo →</a>
+          </div>
+        </article>
+
+        <!-- Other 2: Express API -->
+        <article class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Backend / API</span>
+            <h4 class="font-semibold text-base mt-1">🛠️ Modular Express REST API</h4>
+            <p class="text-sm text-slate-600 mt-2">Clean modular Node.js + Express API with Joi schema validation and CRUD endpoints for Users and Products.</p>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Node.js</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Express</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Joi</span>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex gap-4">
+            <a href="https://github.com/myhifi/NodeJS-express-crud-modular-architecture" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slate-500 hover:underline">Repo →</a>
+          </div>
+        </article>
+
+        <!-- Other 3: Django Restaurant -->
+        <article class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-green-700">Python / Django</span>
+            <h4 class="font-semibold text-base mt-1">🐍 Lumière — Django Edition</h4>
+            <p class="text-sm text-slate-600 mt-2">A Python/Django implementation of the Lumière restaurant concept. Features Django Admin, dynamic category filtering, and a contact form. Showcases multi-framework adaptability.</p>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Django</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Python</span>
+              <span class="text-xs bg-slate-100 px-2 py-0.5 rounded">Bootstrap</span>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex gap-4">
+            <a href="https://github.com/myhifi/django-restaurant-menu" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slate-500 hover:underline">Repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
     <section id="skills" class="mt-16">
       <h3 class="text-2xl font-semibold">Skills & Tools</h3>
-      <div class="mt-4 grid sm:grid-cols-2 gap-6">
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="bg-white rounded-lg p-4 shadow-sm">
-          <h4 class="font-medium">Frontend</h4>
-          <p class="mt-2 text-sm text-slate-500">HTML, CSS, Tailwind CSS, Bootstrap, JavaScript</p>
+          <h4 class="font-medium">Frontend & Architecture</h4>
+          <p class="mt-2 text-sm text-slate-500">Next.js (App Router), React, TypeScript, Tailwind CSS, JavaScript (ES6+), HTML5, CSS3</p>
         </div>
-
         <div class="bg-white rounded-lg p-4 shadow-sm">
-          <h4 class="font-medium">Backend & Data & Automation</h4>
-          <p class="mt-2 text-sm text-slate-500"> Python, SQLite / SQL basics (CS50), Flask, Power Query (Excel Automation)</p>
+          <h4 class="font-medium">Backend & Database</h4>
+          <p class="mt-2 text-sm text-slate-500">Node.js, Express.js, Prisma ORM, PostgreSQL, MongoDB, Python, Django, Flask</p>
         </div>
-
         <div class="bg-white rounded-lg p-4 shadow-sm">
-          <h4 class="font-medium">Other</h4>
-          <p class="mt-2 text-sm text-slate-500">Git & GitHub, Deployment (GitHub Pages, Netlify), Problem solving (CS50)</p>
+          <h4 class="font-medium">Tools & Workflow</h4>
+          <p class="mt-2 text-sm text-slate-500">Git & GitHub, Vercel, Netlify, VS Code, Power Query, OBS Studio</p>
         </div>
-
         <div class="bg-white rounded-lg p-4 shadow-sm">
-          <h4 class="font-medium">Currently learning</h4>
-          <p class="mt-2 text-sm text-slate-500">React & Next.js (review and build projects next)</p>
+          <h4 class="font-medium">Core Strengths</h4>
+          <p class="mt-2 text-sm text-slate-500">REST APIs, Authentication, Responsive Design, Database Modeling, Problem Solving (CS50)</p>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE & EDUCATION -->
-    <section id="experience" class="mt-16">
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="mt-16">
       <h3 class="text-2xl font-semibold">Education & Certificates</h3>
       <div class="mt-4 grid gap-4">
-        <!-- CS50 Certificate with Verification Link -->
         <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-sky-600">
           <div class="flex flex-col sm:flex-row justify-between items-start gap-3">
             <div>
               <h4 class="font-medium text-slate-900">CS50: Introduction to Computer Science — Harvard (online)</h4>
               <p class="mt-1 text-sm text-slate-500">Key topics: C, Algorithms, Data Structures, Python, SQL, HTML/CSS/JS, Flask.</p>
             </div>
-            <a href="https://certificates.cs50.io/5b8db48c-6b44-4818-8585-7ef55688f133.pdf?size=letter" target="_blank" class="inline-flex items-center text-xs font-semibold text-sky-600 border border-sky-600 px-3 py-1.5 rounded hover:bg-sky-600 hover:text-white transition-all whitespace-nowrap">
+            <a href="https://certificates.cs50.io/5b8db48c-6b44-4818-8585-7ef55688f133.pdf?size=letter" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold text-sky-600 border border-sky-600 px-3 py-1.5 rounded hover:bg-sky-600 hover:text-white transition-all whitespace-nowrap">
               Verify Certificate
             </a>
           </div>
         </div>
-    
+
         <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-slate-200">
           <h4 class="font-medium">Full Stack Development — (MTech)</h4>
-          <p class="mt-1 text-sm text-slate-500">Practical web development training focused on full-stack fundamentals and deployment.</p>
+          <p class="mt-1 text-sm text-slate-500">Practical full-stack training covering modern web architecture, database administration, and deployment.</p>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="mt-16 mb-20">
       <h3 class="text-2xl font-semibold">Contact</h3>
-      <p class="mt-2 text-slate-600">For freelance work, quick fixes or consultations — WhatsApp is the fastest way to reach me.</p>
-    
+      <p class="mt-2 text-slate-600">For freelance projects, quick fixes or consultations — WhatsApp is the fastest way to reach me.</p>
+
       <div class="mt-4 sm:flex sm:items-start sm:gap-10">
-        <a href="https://wa.me/201004004795" class="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-md shadow-md hover:bg-green-700 transition-all">
-          Message me on WhatsApp
+        <a href="https://wa.me/201004004795" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-md shadow-md hover:bg-green-700 transition-all">
+          💬 Message me on WhatsApp
         </a>
-    
+
         <div class="mt-6 sm:mt-0 text-sm text-slate-600 space-y-2">
           <div><strong>Email:</strong> <a href="mailto:myhi@hotmail.com" class="hover:text-sky-600">myhi@hotmail.com</a></div>
           <div class="flex gap-4">
             <strong>Links:</strong>
             <a href="https://codecrafted-vision.lovable.app/#hire" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">Freelance Platforms</a>
-            <a href="https://www.linkedin.com/in/me-y-b91912245/?locale=en" target="_blank" class="text-sky-600 hover:underline">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/me-y-b91912245/?locale=en" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">LinkedIn</a>
           </div>
           <div class="flex gap-4">
             <strong>Files:</strong>
@@ -324,48 +408,79 @@
           </div>
         </div>
       </div>
-    
-      <form class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <input type="text" placeholder="Your name" class="p-3 rounded-md border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-600/20 focus:border-sky-600" />
-        <input type="email" placeholder="Your email" class="p-3 rounded-md border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-600/20 focus:border-sky-600" />
-        <textarea placeholder="Message" rows="4" class="p-3 rounded-md border border-slate-200 sm:col-span-2 focus:outline-none focus:ring-2 focus:ring-sky-600/20 focus:border-sky-600"></textarea>
+
+      <!-- Zero-cost contact form: opens the visitor's email client -->
+      <form id="contactForm" class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input id="contactSubject" type="text" name="subject" placeholder="Subject"
+          class="p-3 rounded-md border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-600/20 focus:border-sky-600" required />
+        <input id="contactEmail" type="email" name="email" placeholder="Your email"
+          class="p-3 rounded-md border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-600/20 focus:border-sky-600" required />
+        <textarea id="contactMessage" name="message" rows="4" placeholder="Your message..."
+          class="p-3 rounded-md border border-slate-200 sm:col-span-2 focus:outline-none focus:ring-2 focus:ring-sky-600/20 focus:border-sky-600" required></textarea>
         <div class="sm:col-span-2 flex flex-wrap gap-3">
-          <button type="submit" class="bg-sky-600 text-white px-6 py-2 rounded-md hover:bg-sky-700 transition-all shadow-sm">Send message</button>
-          <a href="https://github.com/myhifi" target="_blank" class="inline-flex items-center gap-2 text-slate-600 px-4 py-2 rounded-md border border-slate-300 hover:bg-slate-50 transition-all">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <button type="submit" class="bg-sky-600 text-white px-6 py-2 rounded-md hover:bg-sky-700 transition-all shadow-sm">📧 Send via Email</button>
+          <a href="https://github.com/myhifi" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-slate-600 px-4 py-2 rounded-md border border-slate-300 hover:bg-slate-50 transition-all">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             GitHub Profile
           </a>
         </div>
+        <p class="sm:col-span-2 text-xs text-slate-500">
+          This form opens your email app to send the message directly to <a href="mailto:myhi@hotmail.com" class="text-sky-600 hover:underline">myhi@hotmail.com</a>. No registration required.
+        </p>
       </form>
     </section>
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="bg-white border-t py-6">
-    <div class="max-w-6xl mx-auto px-5 text-sm text-slate-500 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-5 text-sm text-slate-500 flex items-center justify-between flex-wrap gap-4">
       <div>© <span id="year"></span> Mohamed Yehia — Freelance Full-Stack Developer</div>
       <div class="flex flex-wrap justify-center gap-6">
-        <a href="https://github.com/myhifi" target="_blank" class="hover:text-sky-600 transition-colors">GitHub</a>
+        <a href="https://github.com/myhifi" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition-colors">GitHub</a>
         <a href="https://codecrafted-vision.lovable.app/#hire" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition-colors">Freelance Platforms</a>
-        <a href="https://www.linkedin.com/in/me-y-b91912245/?locale=en" target="_blank" class="hover:text-sky-600 transition-colors">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/me-y-b91912245/?locale=en" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition-colors">LinkedIn</a>
         <a href="#projects" class="hover:text-sky-600 transition-colors">Projects</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // set year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // mobile menu
     const btn = document.getElementById('mobileBtn');
     const nav = document.getElementById('mobileNav');
-    btn && btn.addEventListener('click', ()=> nav.classList.toggle('hidden'));
 
-    // Basic contact form handler (non-production)
-    document.querySelector('form')?.addEventListener('submit', function(e){
-      e.preventDefault();
-      alert('Thanks — this form is a demo. For real projects I usually link forms to email or webhook services (Formspree, Netlify Forms, Zapier).');
-    });
+    if (btn && nav) {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.addEventListener('click', () => {
+        const isOpen = !nav.classList.contains('hidden');
+        nav.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const subject = document.getElementById('contactSubject').value.trim();
+        const email = document.getElementById('contactEmail').value.trim();
+        const message = document.getElementById('contactMessage').value.trim();
+        const body = [message, '', '---', 'Reply email: ' + email].join('\n');
+        const mailto = 'mailto:myhi@hotmail.com'
+          + '?subject=' + encodeURIComponent(subject)
+          + '&body=' + encodeURIComponent(body);
+        window.location.href = mailto;
+      });
+    }
   </script>
 </body>
 </html>
