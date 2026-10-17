@@ -1,6 +1,6 @@
-# 🌐 Mohamed Yehia — Freelance Full-Stack Developer Portfolio
+# 🌐 Mohamed Yehia — Full-Stack Developer Portfolio
 
-Welcome to my **personal portfolio website**, showcasing my projects, skills, and services as a freelance full-stack web developer.
+Welcome to my **personal portfolio website**, showcasing my featured projects, technical skills, and freelance services as a full-stack web developer.
 
 🔗 **Live Portfolio:** [https://myhifi.github.io/portfolio](https://myhifi.github.io/portfolio)
 
@@ -8,15 +8,15 @@ Welcome to my **personal portfolio website**, showcasing my projects, skills, an
 
 ## 🧠 About Me
 
-I’m **Mohamed Yehia**, an aspiring **Full-Stack Developer** with a foundation from **Harvard’s CS50** and hands-on training in **Full Stack Development (MTech)**.  
-I focus on building **responsive, modern websites** and **small web apps** using:
+I’m **Mohamed Yehia**, a **Full-Stack Web Developer** with a foundation from **Harvard’s CS50** and hands-on training in **Full Stack Development (MTech)**.  
+I focus on building **high-performance, production-ready web applications** using:
 
-- **Frontend:** HTML, CSS, Tailwind CSS, Bootstrap, JavaScript  
-- **Backend:** Flask, Python, SQLite / SQL (CS50)  
-- **Other Tools:** Git, GitHub, Deployment (GitHub Pages / Netlify), VS Code  
+- **Frontend:** Next.js (App Router), React, TypeScript, Tailwind CSS, JavaScript (ES6+)
+- **Backend & Database:** Node.js, Express.js, Prisma ORM, PostgreSQL, MongoDB, Python, Django
+- **Tools & Workflow:** Git & GitHub, Vercel, Netlify, Power Query, VS Code
 
 🎯 **Freelance Focus:**  
-Landing pages • Responsive business sites • Small CRUD apps • Website fixes • Hosting & deployment setup
+Full-Stack Web Apps • Responsive Landing Pages • Data Automation • Website Fixes & Performance Optimization
 
 ---
 
@@ -24,11 +24,11 @@ Landing pages • Responsive business sites • Small CRUD apps • Website fixe
 
 - Built with **HTML5 + Tailwind CSS**
 - Fully **responsive** (mobile-first design)
-- Organized **multi-section layout** (Hero, Services, Projects, Skills, Education, Contact)
+- Organized **multi-section layout** (Hero, Services, Featured Projects, Other Projects, Skills, Education, Contact)
 - Integrated **PDF downloads**:
-  - [CV (Word version)](assets/MyCV_EN.pdf)
+  - [CV (PDF)](assets/MyCV_EN.pdf)
   - [Freelance Resume (PDF)](assets/Mohamed_Yehia_Freelance_Developer_Resume_v2.pdf)
-- **Contact Form** demo (placeholder for Formspree / Netlify Forms)
+- **Zero-cost Contact Form** (Uses a `mailto` fallback to open the user's email client directly)
 - Deployed via **GitHub Pages**
 
 ---
@@ -37,28 +37,40 @@ Landing pages • Responsive business sites • Small CRUD apps • Website fixe
 
 | Section | Description |
 |----------|--------------|
-| **Hero** | Intro, top skills, quick access to CV & Resume |
+| **Hero** | Intro, core stack, quick access to CV & Resume |
 | **Services** | Overview of freelance services |
-| **Projects** | 3 case-study projects (live demos & repos) |
-| **Skills & Tools** | Tech stack overview |
+| **Featured Projects** | 4 production-grade full-stack case studies |
+| **Other Projects** | Supporting apps, specialized tools & backend samples |
+| **Skills & Tools** | Tech stack breakdown (Frontend, Backend, Tools) |
 | **Education** | CS50 + Full Stack Development training |
-| **Contact** | WhatsApp, Email, and GitHub links |
+| **Contact** | WhatsApp, Email, LinkedIn, and GitHub links |
 
 ---
 
-## 💼 Projects Showcased
+## 💼 Featured Projects
 
-| Project | Description | Live Demo |
+| Project | Tech Stack | Live Demo / Video |
 |----------|--------------|-----------|
-| **Clipboard Landing Page** | Frontend Mentor challenge — responsive design using HTML, CSS, Bootstrap | [View Demo](https://myhifi.github.io/Clipboard-landing-page-From-frontendmentor.io/) |
-| **Bootstrap 5 Crash Course Website** | Multi-page layout built during a Bootstrap 5 learning project | [View Demo](https://myhifi.github.io/Bootstrap-5-Crash-Course-_-Website-Build-Deploy/) |
-| **Social Links Profile** | Personal profile and link hub using HTML, CSS, JS | [View Demo](https://myhifi.github.io/social-links-profile/) |
+| **Lumière — Restaurant Platform** | Next.js 16, TypeScript, Prisma, PostgreSQL | [Live Demo](https://lumiere-nextjs-fullstack.vercel.app/) • [Video](https://youtu.be/9meiFDONOwY) |
+| **Novus — Premium Storefront** | Next.js 16, TypeScript, Prisma 6, PostgreSQL | *(In Development)* |
+| **Full-Stack MERN Blog System** | MongoDB, Express, React, Node.js | [Live Demo](https://my-blog-system-five.vercel.app/) |
+
+---
+
+## 📦 Other Projects (Supporting)
+
+| Project | Tech Stack | Link |
+|----------|--------------|-----------|
+| **Bling — Luxury Brand Landing Page** | Vanilla JS, Tailwind CSS | [Live Demo](https://myhifi.github.io/bling-landing-page/) |
+| **Modular Express REST API** | Node.js, Express, Joi | [Repo](https://github.com/myhifi/NodeJS-express-crud-modular-architecture) |
+| **Lumière — Django Edition** | Python, Django, Bootstrap | [Repo](https://github.com/myhifi/django-restaurant-menu) |
+| **Next.js Restaurant Menu (Legacy)** | Next.js, TypeScript, Tailwind | [Live Demo](https://nextjs-restaurant-menu.vercel.app/) |
 
 ---
 
 ## ⚙️ Local Development
 
-If you'd like to clone and view the project locally:
+If you'd like to clone and view the portfolio locally:
 
 ```bash
 git clone https://github.com/myhifi/portfolio.git
