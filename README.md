@@ -54,7 +54,7 @@ Full-Stack Web Apps • Responsive Landing Pages • Data Automation • Website
 | **Tourism Niche Showcase (SaaS MVP)** | Next.js 14, TypeScript, Tailwind CSS, Zod, Vercel AI SDK | [Medical Demo](https://tourism-demo-showcase.vercel.app/demo/medical) • [Day-Trips Demo](https://tourism-demo-showcase.vercel.app/demo/day-trips) • [Cultural Tours Demo](https://tourism-demo-showcase.vercel.app/demo/cultural) • [Repo](https://github.com/myhifi/tourism-demo-showcase) |
 | **Lumière — Restaurant Platform** | Next.js 16, TypeScript, Prisma, PostgreSQL | [Live Demo](https://lumiere-nextjs-fullstack.vercel.app/) • [Video](https://youtu.be/41rTBtHKGWE) |
 | **Novus — Premium Storefront** | Next.js 16, TypeScript, Prisma 6, PostgreSQL | [Repo](https://github.com/myhifi/novus) |
-| **HybridDesk AI — Intelligent Workspace** | Next.js, TypeScript, Tailwind CSS, Firebase AI Logic | [Repo](https://github.com/myhifi/hybriddesk-ai) |
+| **HybridDesk AI — Intelligent Workspace** | Next.js, TypeScript, Tailwind CSS, Firebase AI Logic | [Live Demo](https://hybriddesk-ai.vercel.app/) • [Repo](https://github.com/myhifi/hybriddesk-ai) |
 
 ---
 
