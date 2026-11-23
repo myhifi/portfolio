@@ -51,9 +51,10 @@ Full-Stack Web Apps • Responsive Landing Pages • Data Automation • Website
 
 | Project | Tech Stack | Live Demo / Video |
 |----------|--------------|-----------|
-| **Lumière — Restaurant Platform** | Next.js 16, TypeScript, Prisma, PostgreSQL | [Live Demo](https://lumiere-nextjs-fullstack.vercel.app/) • [Video](https://youtu.be/9meiFDONOwY) |
-| **Novus — Premium Storefront** | Next.js 16, TypeScript, Prisma 6, PostgreSQL | *(In Development)* |
-| **Full-Stack MERN Blog System** | MongoDB, Express, React, Node.js | [Live Demo](https://my-blog-system-five.vercel.app/) |
+| **Tourism Niche Showcase (SaaS MVP)** | Next.js 14, TypeScript, Tailwind CSS, Zod, Vercel AI SDK | [Medical Demo](https://tourism-demo-showcase.vercel.app/demo/medical) • [Day-Trips Demo](https://tourism-demo-showcase.vercel.app/demo/day-trips) • [Repo](https://github.com/myhifi/tourism-demo-showcase) |
+| **Lumière — Restaurant Platform** | Next.js 16, TypeScript, Prisma, PostgreSQL | [Live Demo](https://lumiere-nextjs-fullstack.vercel.app/) • [Video](https://youtu.be/41rTBtHKGWE) |
+| **Novus — Premium Storefront** | Next.js 16, TypeScript, Prisma 6, PostgreSQL | [Repo](https://github.com/myhifi/e-shop) |
+| **HybridDesk AI — Intelligent Workspace** | Next.js, TypeScript, Tailwind CSS, Firebase AI Logic | [Repo](https://github.com/myhifi/hybriddesk-ai) |
 
 ---
 
@@ -63,8 +64,8 @@ Full-Stack Web Apps • Responsive Landing Pages • Data Automation • Website
 |----------|--------------|-----------|
 | **Bling — Luxury Brand Landing Page** | Vanilla JS, Tailwind CSS | [Live Demo](https://myhifi.github.io/bling-landing-page/) |
 | **Modular Express REST API** | Node.js, Express, Joi | [Repo](https://github.com/myhifi/NodeJS-express-crud-modular-architecture) |
+| **Sprint Risk Copilot (Jira Forge)** | Jira Forge, TypeScript, Atlassian Rovo AI | [Repo](https://github.com/myhifi/jira-forge-analytics) |
 | **Lumière — Django Edition** | Python, Django, Bootstrap | [Repo](https://github.com/myhifi/django-restaurant-menu) |
-| **Next.js Restaurant Menu (Legacy)** | Next.js, TypeScript, Tailwind | [Live Demo](https://nextjs-restaurant-menu.vercel.app/) |
 
 ---
 
